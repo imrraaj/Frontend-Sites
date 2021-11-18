@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32"
+        href="./imgs/favicon-32x32.png">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./index.css">
+    <title>Sunnyside agency</title>
+</head>
+
+<body>
+    <header id="banner">
+        <nav id="nav" class="navigation">
+            <h3 class="nav__title">Sunnyside</h3>
+            <ul class="list" id="list">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#" class="active">Contact</a></li>
+            </ul>
+            <div class="hidden menu-toggle" id="menu-toggle"><i id="menuIcon" class='bx bx-menu'></i></div>
+        </nav>
+        <h1 class=" hero__title">
+            We are creatives
+        </h1>
+    </header>
+
+    <main>
+        <section class="egg">
+            <div class="section__info">
+                <div class="section__content">
+                    <h1 class="section__title">Transform your brand</h1>
+                    <p class="section__para">
+                        We are a full-service creative agency specializing in helping brands grow fast.
+                        Engage your clients through compelling visuals that do most of the marketing for you.
+                    </p>
+                    <a href="#" class="section__link">Learn More</a>
+                </div>
+            </div>
+            <div class="section__image" id="transform"></div>
+
+        </section>
+        <section class="glass">
+            <div class="section__info">
+                <div class="section__content">
+                    <h1 class="section__title">Stand out to the right audience</h1>
+                    <p class="section__para">
+                        Using a collaborative formula of designers, researchers, photographers, videographers, and
+                        copywriters, we’ll build and extend your brand in digital places.
+                    </p>
+                    <a href="#" class="section__link">Learn More</a>
+                </div>
+            </div>
+            <div class="section__image" id="stand"></div>
+        </section>
+    </main>
+    <section class="about">
+        <div class="box" id="graphic">
+            <div class="image__text">
+                <h3>Graphic Design</h3>
+                <p>
+                    Great design makes you memorable. We deliver artwork that underscores your brand message and
+                    captures potential clients’ attention.
+                </p>
+            </div>
+        </div>
+        <div class="box" id="photography">
+            <div class="image__text">
+                <h3>Photography</h3>
+                <p>
+                    Increase your credibility by getting the most stunning, high-quality photos that improve your
+                    business image.
+                </p>
+            </div>
+    </section>
+
+
+
+
+    <section id="testemonial-section">
+        <h5 class="testemonial__title">Client testimonials</h5>
+        <div class="testemonials">
+            <div class="testemonial">
+                <div class="test__image">
+                    <img src="./imgs/image-emily.jpg" alt="">
+                </div>
+                <p class="testemonial__text">
+                    We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines
+                    were always hit.
+                </p>
+                <h6>Emily R.</h6>
+                <p>Marketing Director</p>
+            </div>
+
+            <div class="testemonial">
+                <div class="test__image">
+                    <img src="./imgs/image-thomas.jpg" alt="">
+                </div>
+                <p class="testemonial__text">
+                    Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a
+                    satisfying and enjoyable experience.
+                </p>
+                <h6>Thomas S.</h6>
+                <p>Chief Operating Officer</p>
+            </div>
+
+            <div class="testemonial">
+                <div class="test__image">
+                    <img src="./imgs/image-jennie.jpg" alt="">
+                </div>
+                <p class="testemonial__text">
+                    Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly
+                    recommended!
+                </p>
+                <h6>Jennie F.</h6>
+                <p>Business Owner</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery">
+        <img src="./imgs/image-gallery-milkbottles.jpg"
+            alt="image-gallery-milkbottles">
+        <img src="./imgs/image-gallery-orange.jpg"
+            alt="image-gallery-orange">
+        <img src="./imgs/image-gallery-cone.jpg" alt="image-gallery-cone">
+        <img src="./imgs/image-gallery-sugarcubes.jpg"
+            alt="image-gallery-sugarcubes">
+    </section>
+
+    <footer class="footer">
+        <div class="footer__title">Sunnyside</div>
+        <div class="footer__menu">
+            <ul>
+                <li><a href="#">About </a></li>
+                <li><a href="#">Services </a></li>
+                <li><a href="#">Projects </a></li>
+            </ul>
+        </div>
+
+        <div class="social">
+            <i class="icon"><img src="./imgs/icon-facebook.svg" alt=""></i>
+            <i class="icon"><img src="./imgs/icon-instagram.svg" alt=""></i>
+            <i class="icon"><img src="./imgs/icon-twitter.svg" alt=""></i>
+            <i class="icon"><img src="./imgs/icon-pinterest.svg" alt=""></i>
+        </div>
+    </footer>
+    <script>
+        const list = document.getElementById('list');
+        const menu = document.getElementById('menu-toggle');
+        const menuIcon = document.getElementById('menuIcon');
+        const close = ''
+        const toggle = ()=> {
+            list.classList.toggle('toggle');
+            if(menuIcon.classList.contains('bx-menu')){
+                menuIcon.classList.add('bx-x');
+                menuIcon.classList.remove('bx-menu');
+            }else{
+                menuIcon.classList.add('bx-menu');
+                menuIcon.classList.remove('bx-x');
+            }
+        }
+        menu.addEventListener('click',toggle);
+    </script>
+</body>
+
+</html>
